@@ -6,6 +6,13 @@ import requests
 from datetime import date
 from google import genai
 from pydantic import BaseModel
+from fonksiyonlar import trendgetir
+
+diller=["TR","DE","IT","KR","FR","DK","NL"]
+
+guncelle=st.sidebar.button("haberleri güncelle")
+for dil in diller :
+    trendgetir(dil)
 
 ara=st.text_input("haber içinde arama yap")
 
