@@ -36,7 +36,7 @@ for i in range(0,len(haberler),3):
      else:
        pass
     with col3:
-     if i+2 < len(haberler)
+     if i+2 < len(haberler):
     
         st.image(haberler[i+2][3])
         st.write(haberler[i+2][1])
