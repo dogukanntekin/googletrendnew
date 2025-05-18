@@ -13,6 +13,8 @@ diller=["TR","DE","IT","KR","FR","DK","NL"]
 guncelle=st.sidebar.button("haberleri güncelle")
 for dil in diller :
     trendgetir(dil)
+dilsecimi=st.multiselect("ülke seç",diller)
+
 
 ara=st.text_input("haber içinde arama yap")
 
